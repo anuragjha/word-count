@@ -47,7 +47,7 @@ public class WordCountJob {
             job.setOutputValueClass(IntWritable.class);
 
             /* Reduce tasks */
-            job.setNumReduceTasks(10);
+            job.setNumReduceTasks(1);
 
             /* Job input path in HDFS */
             FileInputFormat.addInputPath(job, new Path(args[0]));
